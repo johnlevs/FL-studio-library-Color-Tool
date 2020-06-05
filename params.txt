@@ -1,23 +1,23 @@
-GRADIENT
+HUE
 To switch between gradient and hue modes, change the first line to 'HUE' for hue and 'GRADIENT' 
 for gradients. 
 ======================================================================
 Directory location below. Example: DIRECTORY: C:\path\to\flstudio\sample\library
-DIRECTORY: 
+DIRECTORY:
 
 =========================VARIABLES FOR HUE===============================
 Color parameters
 Top and bottom are the bounds for the hue degree in the HSV color scale. 
 The direction can be positive or negative. Numbers Must be between 0 and 360
-TOP: 0
-BOTTOM: 180
+TOP: 292
+BOTTOM: 5
 
 LIGHT & DARK refer to the percent black and white levels in the HSV scale. 
 Enter a number between 0 and 100 for each. 
-LIGHT: 100
-DARK: 100
+LIGHT: 87
+DARK: 91
 
 =========================VARIABLES FOR GRADIENT===============================
 Enter the Hex code for the color without the # symbol 
-C1: 80ecff
-C2: 8f80ff
+C1: e82f1e
+C2: cd20e8

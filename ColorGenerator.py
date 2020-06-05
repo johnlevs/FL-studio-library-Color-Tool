@@ -1,19 +1,15 @@
 import colorsys
-import math
 import pathlib
 from pathlib import Path
 
 
 ##########################=HELPERS=#####################################
 def RGB_to_hex(RGB):
-    ''' [255,255,255] -> "#FFFFFF" '''
-    # Components need to be integers for hex to make sense
     RGB = [int(x) for x in RGB]
     return "$"+"".join(["0{0:x}".format(v) if v < 16 else
         "{0:x}".format(v) for v in RGB])
 
 def hex_to_rgb(hex):
-    ''' #FFFFFF -> [B,G,R]'''
     #backwards because fl is weird
     return [int(hex[4:6],16),int(hex[2:4],16),int(hex[0:2],16)]
 
@@ -74,7 +70,7 @@ if len(DirNames)==0:
 if grad:    #gradient method
     RGB1 = hex_to_rgb(c1)
     RGB2 = hex_to_rgb(c2)
-    D = math.sqrt((RGB2[0]-RGB1[0])**2+(RGB2[1]-RGB1[1])**2+(RGB2[2]-RGB1[2])**2)
+    D = ((RGB2[0]-RGB1[0])**2+(RGB2[1]-RGB1[1])**2+(RGB2[2]-RGB1[2])**2)**.5
     norm=[]
     for i in range(0,3): 
         norm.append((RGB2[i]-RGB1[i])/D)
