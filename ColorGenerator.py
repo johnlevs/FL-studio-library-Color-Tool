@@ -1,5 +1,6 @@
 import colorsys
 import pathlib
+import inspect
 from pathlib import Path
 
 
@@ -84,7 +85,8 @@ if grad:    #gradient method
         ' highlight this subdir\
         \nColor="+HexString+\
         "\nIconIndex=24 "
-        with open(str(DirNames[x])+".NFO",'w') as file_object:
+        PrintPath = "output/"+str(DirNames[x].parts[-1])+".NFO"
+        with open(PrintPath,'w') as file_object:
             file_object.write(nfo_text)
 elif hue:
 #hue range method
@@ -109,5 +111,6 @@ elif hue:
         ' highlight this subdir\
         \nColor="+HexString+\
         "\nIconIndex=24 "
-        with open(str(DirNames[x])+".NFO",'w') as file_object:
+        PrintPath = "output/"+str(DirNames[x].parts[-1])+".NFO"
+        with open(PrintPath,'w') as file_object:
             file_object.write(nfo_text)
