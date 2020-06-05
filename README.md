@@ -1,5 +1,5 @@
 # FL-studio-library-Color-Tool
-A python script that colors the library browser folders in fl studio. This currently *does not* work if your library is in the default FL Studio location, i.e. some subdirectory of ProgramFiles. The script does all the work of generating the .NFO files for each sub-directory, shown on [this forum post](https://forum.image-line.com/viewtopic.php?t=36492). This was written with Python 3.8.
+A python script that colors the library browser folders in fl studio. The script does all the work of generating the .NFO files for each sub-directory, shown on [this forum post](https://forum.image-line.com/viewtopic.php?t=36492). The files generated are placed in the output folder, and the user mmust drag and drop these into the fl studio folder. This was written with Python 3.8.
 
 To run the script, first you will need to edit the param.txt file show below.
 ~~~
