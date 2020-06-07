@@ -1,23 +1,21 @@
 HUE
-To switch between gradient and hue modes, change the first line to 'HUE' for hue and 'GRADIENT' 
-for gradients. 
-======================================================================
-Directory location below. Example: DIRECTORY: C:\path\to\flstudio\sample\library
-DIRECTORY:
 
-=========================VARIABLES FOR HUE===============================
-Color parameters
-Top and bottom are the bounds for the hue degree in the HSV color scale. 
-The direction can be positive or negative. Numbers Must be between 0 and 360
-TOP: 292
-BOTTOM: 5
+To switch between gradient and hue modes, change the first line to 'HUE' for hue cycle and 'GRADIENT' 
+for gradients between two colors. 
 
-LIGHT & DARK refer to the percent black and white levels in the HSV scale. 
-Enter a number between 0 and 100 for each. 
-LIGHT: 87
-DARK: 91
+=========================COLOR VARIABLES===============================
+Enter the Hex code for each color without the # symbol
 
-=========================VARIABLES FOR GRADIENT===============================
-Enter the Hex code for the color without the # symbol 
 C1: e82f1e
 C2: cd20e8
+
+=============================DIRECTORY LOCATIONS=======================
+Enter the fl studio sample library directory location below. 
+Example: DIRECTORY: C:\path\to\flstudio\sample\library
+
+DIRECTORY: 
+
+Directory location of the folder to place the .nfo files (This could be either a relative or absolute path)
+(Currently set to the output folder)
+
+OUTPUT: output/
